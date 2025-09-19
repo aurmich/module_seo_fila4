@@ -32,6 +32,7 @@ return [
 // blade files
 $page->navigation
 ```
+<<<<<<< HEAD
 >>>>>>> d78cb43 (.)
 # Navigazione
 
@@ -51,3 +52,7 @@ La navigazione del modulo SEO è organizzata per fornire un accesso intuitivo al
 - /seo/reports
 - /seo/settings
 
+=======
+=======
+>>>>>>> 1c344a1 (.)
+>>>>>>> 3001188 (.)

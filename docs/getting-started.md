@@ -75,6 +75,7 @@ Now that you’ve edited your configuration variables and know how to customize 
 # options: dev, prod
 npm run dev
 ```
+<<<<<<< HEAD
 # Guida Introduttiva
 
 ## Installazione
@@ -105,3 +106,6 @@ Per maggiori dettagli consultare:
 - [Meta Tags](meta-tags.md)
 - [Analisi](analysis.md)
 
+=======
+>>>>>>> 1c344a1 (.)
+>>>>>>> 3001188 (.)
