@@ -172,14 +172,11 @@ tests/Unit
     },
     "require_comment": {
         "openai-php/laravel": "*"
-<<<<<<< HEAD
-=======
 =======
         "openai-php/laravel": "*"
         
 >>>>>>> d78cb43 (.)
 >>>>>>> 1c344a1 (.)
->>>>>>> 3001188 (.)
     },
 ```
 
