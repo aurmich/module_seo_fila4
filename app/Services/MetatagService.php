@@ -12,7 +12,15 @@ class MetatagService
     /**
      * The metatag data.
      *
+<<<<<<< HEAD
      * @var MetatagData
+=======
+<<<<<<< HEAD
+     * @var MetatagData
+=======
+     * @var \Modules\Seo\Data\MetatagData
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
      */
     protected MetatagData $metatagData;
 
@@ -29,7 +37,15 @@ class MetatagService
     /**
      * Get the metatag data.
      *
+<<<<<<< HEAD
      * @return MetatagData
+=======
+<<<<<<< HEAD
+     * @return MetatagData
+=======
+     * @return \Modules\Seo\Data\MetatagData
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
      */
     public function get(): MetatagData
     {
@@ -182,7 +198,15 @@ class MetatagService
     /**
      * Set the published time.
      *
+<<<<<<< HEAD
      * @param DateTimeInterface $time
+=======
+<<<<<<< HEAD
+     * @param DateTimeInterface $time
+=======
+     * @param \DateTimeInterface $time
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
      * @return void
      */
     public function setPublishedTime(DateTimeInterface $time): void
@@ -193,7 +217,15 @@ class MetatagService
     /**
      * Set the modified time.
      *
+<<<<<<< HEAD
      * @param DateTimeInterface $time
+=======
+<<<<<<< HEAD
+     * @param DateTimeInterface $time
+=======
+     * @param \DateTimeInterface $time
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
      * @return void
      */
     public function setModifiedTime(DateTimeInterface $time): void

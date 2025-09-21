@@ -23,7 +23,11 @@ return [
             'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
+<<<<<<< HEAD
     'Jigsaw Docs' => 'https://jigsaw.tighten.co/project_docs/installation',
+=======
+    'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
+>>>>>>> 5c32e3c (.)
 ];
 
 // config.php
@@ -32,5 +36,27 @@ return [
 // blade files
 $page->navigation
 ```
+<<<<<<< HEAD
 =======
 >>>>>>> 1c344a1 (.)
+=======
+>>>>>>> d78cb43 (.)
+# Navigazione
+
+La navigazione del modulo SEO è organizzata per fornire un accesso intuitivo alle funzionalità di ottimizzazione.
+
+## Menu Principale
+- Dashboard SEO
+- Meta Tags
+- Analisi Contenuti
+- Rapporti
+- Configurazione
+
+## Struttura URL
+- /seo/dashboard
+- /seo/meta-tags
+- /seo/content
+- /seo/reports
+- /seo/settings
+
+>>>>>>> 5c32e3c (.)

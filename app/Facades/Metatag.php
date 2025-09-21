@@ -4,13 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Facades;
 
+<<<<<<< HEAD
 use Modules\Seo\Data\MetatagData;
 use DateTimeInterface;
+=======
+<<<<<<< HEAD
+use Modules\Seo\Data\MetatagData;
+use DateTimeInterface;
+=======
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
 use Illuminate\Support\Facades\Facade;
 use Modules\Seo\Services\MetatagService;
 
 /**
+<<<<<<< HEAD
  * @method static MetatagData get()
+=======
+<<<<<<< HEAD
+ * @method static MetatagData get()
+=======
+ * @method static \Modules\Seo\Data\MetatagData get()
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
  * @method static void set(array<string, mixed> $data)
  * @method static void setTitle(string $title)
  * @method static void setDescription(string $description)
@@ -24,8 +40,18 @@ use Modules\Seo\Services\MetatagService;
  * @method static void setSiteName(string $siteName)
  * @method static void setUrl(string $url)
  * @method static void setAuthor(string $author)
+<<<<<<< HEAD
  * @method static void setPublishedTime(DateTimeInterface $time)
  * @method static void setModifiedTime(DateTimeInterface $time)
+=======
+<<<<<<< HEAD
+ * @method static void setPublishedTime(DateTimeInterface $time)
+ * @method static void setModifiedTime(DateTimeInterface $time)
+=======
+ * @method static void setPublishedTime(\DateTimeInterface $time)
+ * @method static void setModifiedTime(\DateTimeInterface $time)
+>>>>>>> origin/develop
+>>>>>>> 5c32e3c (.)
  *
  * @see \Modules\Seo\Services\MetatagService
  */

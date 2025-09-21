@@ -172,11 +172,14 @@ tests/Unit
     },
     "require_comment": {
         "openai-php/laravel": "*"
+<<<<<<< HEAD
 =======
         "openai-php/laravel": "*"
         
 >>>>>>> d78cb43 (.)
 >>>>>>> 1c344a1 (.)
+=======
+>>>>>>> 5c32e3c (.)
     },
 ```
 
@@ -187,6 +190,11 @@ tests/Unit
 
 ## Collegamenti alla documentazione generale
 
+<<<<<<< HEAD
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
+=======
+- [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
+- [Report PHPStan](/docs/phpstan/)
+>>>>>>> 5c32e3c (.)
 
