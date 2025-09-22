@@ -3,18 +3,9 @@ cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 5c32e3c (.)
 
 # Backup files
 *.old
 *.old1
 *.backup
 *.backup.*
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)

@@ -4,14 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Data;
 
-<<<<<<< HEAD
 use BadMethodCallException;
-=======
-<<<<<<< HEAD
-use BadMethodCallException;
-=======
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
@@ -211,15 +204,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     /**
      * Get the published time.
      *
-<<<<<<< HEAD
      * @return DateTimeInterface|null
-=======
-<<<<<<< HEAD
-     * @return DateTimeInterface|null
-=======
-     * @return \DateTimeInterface|null
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
      */
     public function getPublishedTime(): ?DateTimeInterface
     {
@@ -230,15 +215,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     /**
      * Get the modified time.
      *
-<<<<<<< HEAD
      * @return DateTimeInterface|null
-=======
-<<<<<<< HEAD
-     * @return DateTimeInterface|null
-=======
-     * @return \DateTimeInterface|null
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
      */
     public function getModifiedTime(): ?DateTimeInterface
     {
@@ -283,15 +260,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
             return $this->get($key, $parameters[0] ?? null);
         }
 
-<<<<<<< HEAD
         throw new BadMethodCallException(sprintf(
-=======
-<<<<<<< HEAD
-        throw new BadMethodCallException(sprintf(
-=======
-        throw new \BadMethodCallException(sprintf(
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
             'Method %s::%s does not exist.', static::class, $method
         ));
     }

@@ -4,16 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Interfaces;
 
-<<<<<<< HEAD
 use DateTimeInterface;
 
-=======
-<<<<<<< HEAD
-use DateTimeInterface;
-
-=======
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
 interface MetatagDataInterface
 {
     /**
@@ -103,40 +95,16 @@ interface MetatagDataInterface
     /**
      * Get the published time.
      *
-<<<<<<< HEAD
      * @return DateTimeInterface|null
      */
     public function getPublishedTime(): ?DateTimeInterface;
-=======
-<<<<<<< HEAD
-     * @return DateTimeInterface|null
-     */
-    public function getPublishedTime(): ?DateTimeInterface;
-=======
-     * @return \DateTimeInterface|null
-     */
-    public function getPublishedTime(): ?\DateTimeInterface;
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
 
     /**
      * Get the modified time.
      *
-<<<<<<< HEAD
      * @return DateTimeInterface|null
      */
     public function getModifiedTime(): ?DateTimeInterface;
-=======
-<<<<<<< HEAD
-     * @return DateTimeInterface|null
-     */
-    public function getModifiedTime(): ?DateTimeInterface;
-=======
-     * @return \DateTimeInterface|null
-     */
-    public function getModifiedTime(): ?\DateTimeInterface;
->>>>>>> origin/develop
->>>>>>> 5c32e3c (.)
 
     /**
      * Get extra metadata.
