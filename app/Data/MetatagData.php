@@ -26,7 +26,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     /**
      * Create a new metatag data instance.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return void
      */
     public function __construct(array $data = [])
@@ -36,34 +36,31 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Get the title.
-     *
-     * @return string
      */
     public function getTitle(): string
     {
         $value = $this->data['title'] ?? '';
+
         return is_string($value) ? $value : '';
     }
 
     /**
      * Get the description.
-     *
-     * @return string
      */
     public function getDescription(): string
     {
         $value = $this->data['description'] ?? '';
+
         return is_string($value) ? $value : '';
     }
 
     /**
      * Get the keywords.
-     *
-     * @return string
      */
     public function getKeywords(): string
     {
         $value = $this->data['keywords'] ?? '';
+
         return is_string($value) ? $value : '';
     }
 
@@ -82,7 +79,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
         $colorsData = $this->data['colors'] ?? null;
 
-        if (!is_array($colorsData)) {
+        if (! is_array($colorsData)) {
             return $default;
         }
 
@@ -90,7 +87,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
         $result = [];
 
         foreach ($colorsData as $key => $value) {
-            $strKey = is_string($key) ? $key : (string)$key;
+            $strKey = is_string($key) ? $key : (string) $key;
             $strValue = is_string($value) ? $value : '';
             $result[$strKey] = $strValue;
         }
@@ -100,41 +97,36 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Get the robots.
-     *
-     * @return string
      */
     public function getRobots(): string
     {
         $value = $this->data['robots'] ?? 'index, follow';
+
         return is_string($value) ? $value : 'index, follow';
     }
 
     /**
      * Get the canonical URL.
-     *
-     * @return string|null
      */
     public function getCanonical(): ?string
     {
         $value = $this->data['canonical'] ?? null;
+
         return is_string($value) ? $value : null;
     }
 
     /**
      * Get the image URL.
-     *
-     * @return string|null
      */
     public function getImage(): ?string
     {
         $value = $this->data['image'] ?? null;
+
         return is_string($value) ? $value : null;
     }
 
     /**
      * Get the locale.
-     *
-     * @return string
      */
     public function getLocale(): string
     {
@@ -150,19 +142,16 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Get the type.
-     *
-     * @return string
      */
     public function getType(): string
     {
         $value = $this->data['type'] ?? 'website';
+
         return is_string($value) ? $value : 'website';
     }
 
     /**
      * Get the site name.
-     *
-     * @return string
      */
     public function getSiteName(): string
     {
@@ -175,8 +164,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Get the URL.
-     *
-     * @return string|null
      */
     public function getUrl(): ?string
     {
@@ -187,47 +174,44 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
         }
 
         $current = url()->current();
+
         return is_string($current) ? $current : null;
     }
 
     /**
      * Get the author.
-     *
-     * @return string|null
      */
     public function getAuthor(): ?string
     {
         $value = $this->data['author'] ?? null;
+
         return is_string($value) ? $value : null;
     }
 
     /**
      * Get the published time.
-     *
-     * @return DateTimeInterface|null
      */
     public function getPublishedTime(): ?DateTimeInterface
     {
         $value = $this->data['published_time'] ?? null;
+
         return $value instanceof DateTimeInterface ? $value : null;
     }
 
     /**
      * Get the modified time.
-     *
-     * @return DateTimeInterface|null
      */
     public function getModifiedTime(): ?DateTimeInterface
     {
         $value = $this->data['modified_time'] ?? null;
+
         return $value instanceof DateTimeInterface ? $value : null;
     }
 
     /**
      * Get extra metadata.
      *
-     * @param string $key
-     * @param mixed $default
+     * @param  mixed  $default
      * @return mixed
      */
     public function get(string $key, $default = null)
@@ -237,9 +221,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Check if the metadata has a specific key.
-     *
-     * @param string $key
-     * @return bool
      */
     public function has(string $key): bool
     {
@@ -249,14 +230,14 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     /**
      * Handle dynamic method calls.
      *
-     * @param string $method
-     * @param array<int, mixed> $parameters
+     * @param  array<int, mixed>  $parameters
      * @return mixed
      */
     public function __call(string $method, array $parameters)
     {
         if (strpos($method, 'get') === 0) {
             $key = lcfirst(substr($method, 3));
+
             return $this->get($key, $parameters[0] ?? null);
         }
 
@@ -288,14 +269,14 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     /**
      * Create a new instance from Livewire data.
      *
-     * @param mixed $value
-     * @return self
+     * @param  mixed  $value
      */
     public static function fromLivewire($value): self
     {
         if (is_array($value)) {
             /** @var array<string, mixed> $typedValue */
             $typedValue = $value;
+
             return new self($typedValue);
         }
 

@@ -11,8 +11,6 @@ class MetatagService
 {
     /**
      * The metatag data.
-     *
-     * @var MetatagData
      */
     protected MetatagData $metatagData;
 
@@ -23,13 +21,11 @@ class MetatagService
      */
     public function __construct()
     {
-        $this->metatagData = new MetatagData();
+        $this->metatagData = new MetatagData;
     }
 
     /**
      * Get the metatag data.
-     *
-     * @return MetatagData
      */
     public function get(): MetatagData
     {
@@ -39,8 +35,7 @@ class MetatagService
     /**
      * Set the metatag data.
      *
-     * @param array<string, mixed> $data
-     * @return void
+     * @param  array<string, mixed>  $data
      */
     public function set(array $data): void
     {
@@ -49,9 +44,6 @@ class MetatagService
 
     /**
      * Set the title.
-     *
-     * @param string $title
-     * @return void
      */
     public function setTitle(string $title): void
     {
@@ -60,9 +52,6 @@ class MetatagService
 
     /**
      * Set the description.
-     *
-     * @param string $description
-     * @return void
      */
     public function setDescription(string $description): void
     {
@@ -71,9 +60,6 @@ class MetatagService
 
     /**
      * Set the keywords.
-     *
-     * @param string $keywords
-     * @return void
      */
     public function setKeywords(string $keywords): void
     {
@@ -83,8 +69,7 @@ class MetatagService
     /**
      * Set the colors.
      *
-     * @param array<string, string> $colors
-     * @return void
+     * @param  array<string, string>  $colors
      */
     public function setColors(array $colors): void
     {
@@ -93,9 +78,6 @@ class MetatagService
 
     /**
      * Set the robots.
-     *
-     * @param string $robots
-     * @return void
      */
     public function setRobots(string $robots): void
     {
@@ -104,9 +86,6 @@ class MetatagService
 
     /**
      * Set the canonical URL.
-     *
-     * @param string $canonical
-     * @return void
      */
     public function setCanonical(string $canonical): void
     {
@@ -115,9 +94,6 @@ class MetatagService
 
     /**
      * Set the image URL.
-     *
-     * @param string $image
-     * @return void
      */
     public function setImage(string $image): void
     {
@@ -126,9 +102,6 @@ class MetatagService
 
     /**
      * Set the locale.
-     *
-     * @param string $locale
-     * @return void
      */
     public function setLocale(string $locale): void
     {
@@ -137,9 +110,6 @@ class MetatagService
 
     /**
      * Set the type.
-     *
-     * @param string $type
-     * @return void
      */
     public function setType(string $type): void
     {
@@ -148,9 +118,6 @@ class MetatagService
 
     /**
      * Set the site name.
-     *
-     * @param string $siteName
-     * @return void
      */
     public function setSiteName(string $siteName): void
     {
@@ -159,9 +126,6 @@ class MetatagService
 
     /**
      * Set the URL.
-     *
-     * @param string $url
-     * @return void
      */
     public function setUrl(string $url): void
     {
@@ -170,9 +134,6 @@ class MetatagService
 
     /**
      * Set the author.
-     *
-     * @param string $author
-     * @return void
      */
     public function setAuthor(string $author): void
     {
@@ -181,9 +142,6 @@ class MetatagService
 
     /**
      * Set the published time.
-     *
-     * @param DateTimeInterface $time
-     * @return void
      */
     public function setPublishedTime(DateTimeInterface $time): void
     {
@@ -192,9 +150,6 @@ class MetatagService
 
     /**
      * Set the modified time.
-     *
-     * @param DateTimeInterface $time
-     * @return void
      */
     public function setModifiedTime(DateTimeInterface $time): void
     {

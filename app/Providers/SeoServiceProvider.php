@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Providers;
 
-use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Seo\Services\MetatagService;
+use Modules\Xot\Providers\XotBaseServiceProvider;
 
 class SeoServiceProvider extends XotBaseServiceProvider
 {
@@ -17,15 +17,13 @@ class SeoServiceProvider extends XotBaseServiceProvider
 
     /**
      * Register the service provider.
-     *
-     * @return void
      */
     public function register(): void
     {
         parent::register();
 
         $this->app->singleton(MetatagService::class, function ($app) {
-            return new MetatagService();
+            return new MetatagService;
         });
     }
 

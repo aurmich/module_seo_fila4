@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Facades;
 
-use Modules\Seo\Data\MetatagData;
 use DateTimeInterface;
 use Illuminate\Support\Facades\Facade;
+use Modules\Seo\Data\MetatagData;
 use Modules\Seo\Services\MetatagService;
 
 /**
